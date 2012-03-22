@@ -1,4 +1,4 @@
 web1:
-	name: thomasena
-	shared_writable_dirs:
-		- app/tmp
+  name: thomasena
+  shared_writable_dirs:
+    - app/tmp
