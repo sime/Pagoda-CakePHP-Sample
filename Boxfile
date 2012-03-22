@@ -15,7 +15,7 @@ web1:
     - mcrypt
     - mysqli
     - mbstring
-    - pdo_mysq
+    - pdo_mysql
 
 db1:
   name: sime-cakephp
