@@ -5,8 +5,8 @@ web1:
     - app/tmp
     - app/tmp/cache
     - app/tmp/cache/models
-	- app/tmp/cache/persistent
-	- app/tmp/cache/views
-	- app/tmp/logs
-	- app/tmp/sessions
-	- app/tmp/tests
+    - app/tmp/cache/persistent
+    - app/tmp/cache/views
+    - app/tmp/logs
+    - app/tmp/sessions
+    - app/tmp/tests
