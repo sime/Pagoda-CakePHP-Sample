@@ -10,3 +10,7 @@ web1:
     - app/tmp/logs
     - app/tmp/sessions
     - app/tmp/tests
+
+db1:
+  name: sime-cakephp
+  type: mysql
