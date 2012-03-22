@@ -62,7 +62,7 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'tunnel.pagobox.com',
+		'host' => 'tunnel.pagodabox.com',
 		'login' => 'libby',
 		'password' => 'ihEpeJ6r',
 		'database' => 'sime-cakephp',
