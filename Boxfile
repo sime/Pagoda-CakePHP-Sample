@@ -20,3 +20,7 @@ web1:
 db1:
   name: sime-cakephp
   type: mysql
+
+global:
+  env:
+    - STACK: pagoda
