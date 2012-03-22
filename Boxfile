@@ -3,5 +3,10 @@ web1:
   name: thomasena
   shared_writable_dirs:
     - app/tmp
-    - app/tmp/*
     - app/tmp/cache
+    - app/tmp/cache/models
+	- app/tmp/cache/persistent
+	- app/tmp/cache/views
+	- app/tmp/logs
+	- app/tmp/sessions
+	- app/tmp/tests
