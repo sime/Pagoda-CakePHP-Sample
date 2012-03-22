@@ -1,6 +1,7 @@
 # vim: ft=yaml:softtabstop=2
 web1:
   name: thomasena
+  document_root: /app/webroot
   shared_writable_dirs:
     - app/tmp
     - app/tmp/cache
@@ -10,6 +11,11 @@ web1:
     - app/tmp/logs
     - app/tmp/sessions
     - app/tmp/tests
+  php_extension:
+    - mcrypt
+    - mysqli
+    - mbstring
+    - pdo_mysq
 
 db1:
   name: sime-cakephp
