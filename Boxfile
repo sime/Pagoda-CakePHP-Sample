@@ -12,9 +12,6 @@ web1:
     - app/tmp/sessions
     - app/tmp/tests
   php_extension:
-    - mcrypt
-    - mysqli
-    - mbstring
     - pdo_mysql
     - apc
 
