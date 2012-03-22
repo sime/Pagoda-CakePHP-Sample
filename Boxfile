@@ -4,3 +4,4 @@ web1:
   shared_writable_dirs:
     - app/tmp
     - app/tmp/*
+    - app/tmp/cache
