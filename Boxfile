@@ -16,6 +16,8 @@ web1:
     - mbstring
     - pdo_mysql
     - apc
+  before_deploy:
+    - "app/Console/cake Migrations.migration all"
 
 db1:
   name: sime-cakephp
