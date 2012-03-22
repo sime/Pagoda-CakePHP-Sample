@@ -1,4 +1,4 @@
-# vim: ft=yaml:softtabstop=2
+# vim: set ft=yaml expandtab tabstop=2 shiftwidth=2 softtabstop=2:
 web1:
   name: thomasena
   document_root: /app/webroot
