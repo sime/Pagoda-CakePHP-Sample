@@ -57,30 +57,15 @@
  * unix_socket =>
  * For MySQL to connect via socket specify the `unix_socket` parameter instead of `host` and `port`
  */
-if (is_null(env('STACK'))) {
-	class DATABASE_CONFIG {
+class DATABASE_CONFIG {
 
-		public $default = array(
-			'datasource' => 'Database/Mysql',
-			'persistent' => false,
-			'host' => 'localhost',
-			'login' => 'root',
-			'password' => '',
-			'database' => 'pagoda',
-			'prefix' => '',
-		);
-	}
-} else {
-	class DATABASE_CONFIG {
-
-		public $default = array(
-			'datasource' => 'Database/Mysql',
-			'persistent' => false,
-			'host' => 'tunnel.pagodabox.com',
-			'login' => 'libby',
-			'password' => 'ihEpeJ6r',
-			'database' => 'sime-cakephp',
-			'prefix' => '',
-		);
-	}
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'pagoda',
+		'prefix' => '',
+	);
 }
