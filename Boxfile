@@ -17,8 +17,9 @@ web1:
     - pdo_mysql
     - apc
   before_deploy:
-    - "mv app/Config/database.php.pagoda app/Config/database.php"
     - "app/Console/cake Migrations.migration all"
+  after_build:
+    - "mv app/Config/database.php.pagoda app/Config/database.php"
 
 db1:
   name: sime-cakephp
