@@ -3,12 +3,24 @@ App::uses('AppModel', 'Model');
 /**
  * Post Model
  *
+ * @property User $User
  */
 class Post extends AppModel {
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
 /**
- * Display field
+ * belongsTo associations
  *
- * @var string
+ * @var array
  */
-	public $displayField = 'title';
+	public $belongsTo = array(
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 }

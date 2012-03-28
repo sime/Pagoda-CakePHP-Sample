@@ -3,6 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
+			<th><?php echo $this->Paginator->sort('user_id');?></th>
 			<th><?php echo $this->Paginator->sort('title');?></th>
 			<th><?php echo $this->Paginator->sort('body');?></th>
 			<th><?php echo $this->Paginator->sort('created');?></th>
@@ -13,6 +14,9 @@
 	foreach ($posts as $post): ?>
 	<tr>
 		<td><?php echo h($post['Post']['id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($post['User']['name'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+		</td>
 		<td><?php echo h($post['Post']['title']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['body']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['created']); ?>&nbsp;</td>
@@ -44,5 +48,7 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

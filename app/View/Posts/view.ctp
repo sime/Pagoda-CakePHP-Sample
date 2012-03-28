@@ -6,6 +6,11 @@
 			<?php echo h($post['Post']['id']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('User'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($post['User']['name'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Title'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['title']); ?>
@@ -35,5 +40,7 @@
 		<li><?php echo $this->Form->postLink(__('Delete Post'), array('action' => 'delete', $post['Post']['id']), null, __('Are you sure you want to delete # %s?', $post['Post']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
